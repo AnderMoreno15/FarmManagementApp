@@ -1,20 +1,24 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #F5F5DC; /* Beige, para un fondo natural */
+    color: #4CAF50; /* Verde para el texto */
 }
 
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e1e1e;
+    background-color: #6B8E23; /* Verde oliva para un toque rústico */
     color: white;
     padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
 
 .topbar h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
+    color: #FFD700; /* Amarillo dorado para resaltar */
 }
 
 .topbar ul {
@@ -26,17 +30,115 @@ body {
 }
 
 .topbar ul li a {
-    color: white;
+    color: #FFD700; /* Amarillo dorado */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.2s;
-    font-size: 17px;
-    padding: 0.5em 2em;
-    border: transparent;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    font-size: 18px;
+    padding: 0.5em 1.5em;
     border-radius: 4px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 2px solid #FFD700; /* Borde amarillo */
 }
 
 .topbar ul li a:hover {
-    color: #00bfff;
+    color: white;
+    background-color: #FFD700; /* Fondo amarillo al pasar el ratón */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Brillo */
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #8BC34A; /* Verde claro */
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FFD700; /* Amarillo dorado */
+    color: #6B8E23; /* Verde oliva */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #FFC107; /* Amarillo más oscuro */
+    transform: scale(1.05);
+}
+
+.features {
+    padding: 40px 20px;
+    background-color: #F5F5DC; /* Beige */
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Verde */
+}
+
+.feature {
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 22px;
+    color: #6B8E23; /* Verde oliva */
+}
+
+.feature p {
+    font-size: 16px;
+    color: #333; /* Gris oscuro */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6B8E23; /* Verde oliva */
+    color: white;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #388E3C; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de crecimiento */
+}
+
+a {
+    color: #6B8E23; /* Verde oliva */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4CAF50; /* Verde más brillante */
+    text-decoration: underline;
 }
