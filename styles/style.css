@@ -42,9 +42,8 @@ body {
 }
 
 .topbar ul li a:hover {
-    color: white;
+    color: #4CAF50;
     background-color: #FFD700; /* Fondo amarillo al pasar el ratón */
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Brillo */
 }
 
 header {
@@ -141,4 +140,41 @@ a {
 a:hover {
     color: #4CAF50; /* Verde más brillante */
     text-decoration: underline;
+}
+
+#metodologia, #tecnologias, #resultados {
+    padding: 40px 20px;
+    background-color: #F5F5DC; /* Beige */
+    text-align: center;
+}
+
+#metodologia h2, #tecnologias h2, #resultados h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Verde */
+}
+
+#metodologia ul, #tecnologias ul, #resultados ul {
+    list-style: none;
+    padding: 0;
+}
+
+#metodologia ul li, #tecnologias ul li, #resultados ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Gris oscuro */
+}
+
+#equipo .feature {
+    margin-bottom: 20px;
+}
+
+#equipo .feature h3 {
+    font-size: 22px;
+    color: #6B8E23; /* Verde oliva */
+}
+
+#equipo .feature p {
+    font-size: 16px;
+    color: #333; /* Gris oscuro */
 }
