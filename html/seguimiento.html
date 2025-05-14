@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Ejecución y Seguimiento</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/style.css">
+  <title>Ejecución y Seguimiento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/contexto_objetivos.css">
   <link rel="icon" href="../resources/media/logo.png">
 </head>
 
@@ -14,71 +17,97 @@
     <h2>Farm Management App</h2>
     <ul>
       <li><a href="../index.html">Inicio</a></li>
-      <li><a href="#procedimientos">Procedimientos</a></li>
-      <li><a href="#variables">Variables</a></li>
-      <li><a href="#instrumentos">Instrumentos</a></li>
+      <li><a href="contexto_objetivos.html">Contexto y Objetivos</a></li>
+      <li><a href="documentacion.html">Documentacion</a></li>
+      <li><a href="planificacion.html">Planificacion</a></li>
+      <li><a href="seguimiento.html">Ejecución y Seguimiento</a></li>
     </ul>
   </nav>
 
   <!-- Sección principal -->
-  <header class="title">
-    <h1>Ejecución y Seguimiento</h1>
-    <p>Descubre cómo definimos los procedimientos, variables e instrumentos clave para garantizar el éxito del proyecto.</p>
-    <a href="#procedimientos" class="boton">Explorar Procedimientos</a>
-  </header>
+  <div class="cover-seguimiento">
+    <div class="cover-inner">
+      <h2>Ejecución y Seguimiento</h2>
+      <p>
+        Para garantizar el éxito del proyecto, hemos definido procedimientos claros de seguimiento, seleccionado variables clave y empleado instrumentos eficaces para el control y la mejora continua durante la ejecución.
+      </p>
+      <div>
+        <a href="#procedimientos" class="cta-button">Ver Procedimientos</a>
+      </div>
+    </div>
+  </div>
 
-  <img src="../resources/media/plan_1.jpg" alt="Plan img 1" class="decorative-image">
-
-  <!-- Sección de procedimientos -->
-  <section id="procedimientos" class="features">
+  <div class="intro">
     <h2>Procedimientos de Seguimiento</h2>
-    <p>Para garantizar un control efectivo durante la ejecución del proyecto, hemos definido los siguientes procedimientos:</p>
-    <ul>
-      <li>Reuniones semanales para evaluar el progreso y resolver bloqueos.</li>
-      <li>Uso de herramientas de gestión de proyectos como Trello para asignar tareas y monitorear su estado.</li>
-      <li>Revisión de hitos clave al final de cada sprint.</li>
-      <li>Documentación continua de avances y problemas encontrados.</li>
+    <p style="max-width: 70%; margin: 20px auto;">
+      El equipo organizó el trabajo en iteraciones semanales, realizando reuniones breves cada lunes para revisar el avance, detectar bloqueos y ajustar prioridades. Se empleó una metodología ágil, permitiendo adaptarse rápidamente a los cambios y asegurar entregas continuas de valor.
+    </p>
+    <ul class="seguimiento-lista">
+      <li>
+        <span class="seguimiento-icono">🗂️</span>
+        <strong>Planificación semanal</strong> de tareas y objetivos.
+      </li>
+      <li>
+        <span class="seguimiento-icono">🤝</span>
+        <strong>Reuniones de seguimiento</strong> para compartir avances y dificultades.
+      </li>
+      <li>
+        <span class="seguimiento-icono">✅</span>
+        <strong>Revisión</strong> de hitos y entregables al final de cada ciclo.
+      </li>
+      <li>
+        <span class="seguimiento-icono">📝</span>
+        <strong>Documentación</strong> de acuerdos y decisiones clave.
+      </li>
     </ul>
-  </section>
+  </div>
 
-  <!-- Sección de variables -->
-  <section id="variables" class="features">
-    <h2>Selección de Variables</h2>
-    <p>Las variables seleccionadas para el seguimiento del proyecto son fundamentales para medir el éxito y el progreso:</p>
-    <ul>
-      <li><strong>Tiempo:</strong> Control del cumplimiento de plazos establecidos para cada tarea.</li>
-      <li><strong>Calidad:</strong> Verificación de que los entregables cumplen con los estándares definidos.</li>
-      <li><strong>Recursos:</strong> Supervisión del uso eficiente de los recursos asignados.</li>
-      <li><strong>Riesgos:</strong> Identificación y mitigación de posibles problemas durante la ejecución.</li>
-    </ul>
-  </section>
+  <div class="services">
+    <h2>Variables e Instrumentos de Control</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tiempo y Plazos">
+        <h3>Tiempo y Plazos</h3>
+        <p>Seguimiento del cumplimiento de los plazos establecidos para cada tarea y entrega, usando Trello como tablero Kanban y módulos personalizados de Odoo.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Calidad y Revisión">
+        <h3>Calidad y Revisión</h3>
+        <p>Control de calidad mediante revisiones cruzadas del código en GitHub y validación de funcionalidades en cada iteración.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/discord-logo.jpg" alt="Comunicación y Coordinación">
+        <h3>Comunicación y Coordinación</h3>
+        <p>Uso de Discord para la comunicación diaria y la resolución rápida de dudas o incidencias, manteniendo la coordinación del equipo.</p>
+      </div>
+    </div>
+  </div>
 
-  <!-- Sección de instrumentos -->
-  <section id="instrumentos" class="features">
-    <h2>Instrumentos Empleados</h2>
-    <p>Los instrumentos seleccionados para el seguimiento del proyecto son los siguientes:</p>
-    <ul>
-      <li><strong>Herramientas de gestión:</strong> Uso de Trello y GitHub para la planificación y seguimiento de tareas.</li>
-      <li><strong>Reportes:</strong> Generación de informes semanales para evaluar el progreso.</li>
-      <li><strong>Reuniones:</strong> Sesiones de revisión con el equipo para discutir avances y problemas.</li>
-      <li><strong>Indicadores clave:</strong> Uso de métricas como porcentaje de tareas completadas y desviaciones de tiempo.</li>
-    </ul>
-  </section>
-
-  <section class="main-content">
-    <h2>Organización y planificación del trabajo en equipo</h2>
-    <p>El equipo de desarrollo estuvo compuesto por cuatro integrantes, quienes distribuyeron las tareas en forma incremental para construir la aplicación de manera progresiva. Siguiendo un enfoque iterativo e incremental, el proyecto se descompuso en etapas cortas (iteraciones) en las que cada ciclo añadía nueva funcionalidad al producto. De este modo, se establecieron objetivos parciales claros y entregas continuas, lo que facilitó coordinar el esfuerzo de todos los miembros y obtener avances constantes. Cada iteración incluía las tareas necesarias para cumplir con los objetivos planificados en ese periodo, garantizando que al final de cada ciclo el producto tuviera un estado funcional mejorado</p>
-    <h2>Herramientas de gestión y comunicación</h2>
-    <p>Para asegurar una gestión colaborativa de las tareas, se emplearon diversas herramientas especializadas. Trello sirvió como tablero Kanban para visualizar y asignar las tareas pendientes, en curso y finalizadas. Esta plataforma de gestión de proyectos facilita la organización de las tareas de forma visual e intuitiva, permitiendo que varios usuarios colaboren en un mismo proyecto. Del mismo modo, GitHub se utilizó como sistema de control de versiones para el código fuente de la aplicación. El control de versiones registra los cambios realizados y facilita el trabajo en equipo, ya que todos los desarrolladores pueden integrar sus modificaciones de forma coordinada. Además, la aplicación se desarrolló mediante módulos personalizados de Odoo, un ERP de código abierto que permitió extender la funcionalidad estándar según los requisitos del proyecto. Para la comunicación interna y la coordinación en tiempo real se empleó Discord, plataforma de mensajería y voz que ofrece canales organizados para distintos temas. Gracias a Discord, el equipo mantuvo un flujo de comunicación estructurado y accesible, con espacios dedicados a debates técnicos, dudas puntuales o coordinación de tareas. Esta herramienta aportó orden a la comunicación del equipo, dando soporte a la modalidad de trabajo colaborativo aún en entornos remotos o distribuidos.</p>
-    <h2>Seguimiento y evaluación del avance</h2>
-    <p>El progreso del proyecto se monitoreó mediante reuniones de seguimiento periódicas. Cada semana, típicamente los lunes, se celebraba una reunión breve de unos 15 minutos en la que cada integrante reportaba el estado de sus tareas. Esta dinámica se asemeja a las ceremonias de trabajo ágil descritas en la literatura, cuyo objetivo principal es mejorar la comunicación y alinear al equipo en cuanto a los próximos pasos. En cada sesión se revisaba qué tareas se habían completado, cuáles estaban en curso y qué bloqueos surgían, permitiendo al equipo adaptar prioridades o redirigir esfuerzos de inmediato. Al concluir cada reunión semanal se evaluaba el grado de cumplimiento de los objetivos previstos, comparando el avance real con lo planificado para esa iteración. Este procedimiento de evaluación continua permitió detectar a tiempo desvíos o retrasos, y ajustar la planificación de las siguientes semanas en consecuencia.</p>
-    <h2>Dificultades organizativas y soluciones</h2>
-    <p>A lo largo del proyecto surgieron desafíos relacionados con la gestión del tiempo y la organización interna. En particular, al principio las reuniones semanales de corta duración resultaron insuficientes para resolver algunos temas complejos o urgentes. Para solventar esto, el equipo acordó intensificar la comunicación en momentos críticos: se amplió la duración de ciertas reuniones y se estructuraron con agendas claras y puntos a tratar. De esta manera, cada encuentro fue más productivo y centrado en la resolución de problemas específicos. Los ajustes en la dinámica de trabajo —como aumentar la frecuencia de discusión de puntos clave y documentar los acuerdos de cada reunión— permitieron mejorar la coordinación temporal del equipo. En conjunto, estas medidas garantizaron que los problemas de organización no afectaran el avance del proyecto y que las tareas continuaran ejecutándose de forma ordenada.</p>
-  </section>
+  <div class="why-us">
+    <h2>¿Por qué este enfoque?</h2>
+    <div class="why-us-grid">
+      <div class="why-us-item">
+        <h3><strong>Adaptabilidad:</strong></h3>
+        <p>La revisión continua y la comunicación constante permiten adaptarse a cambios y resolver problemas rápidamente.</p>
+      </div>
+      <div class="why-us-item">
+        <h3><strong>Transparencia:</strong></h3>
+        <p>El uso de herramientas colaborativas y la documentación aseguran que todo el equipo esté alineado y los avances sean visibles.</p>
+      </div>
+      <div class="why-us-item">
+        <h3><strong>Mejora continua:</strong></h3>
+        <p>La evaluación periódica de resultados y procesos permite identificar áreas de mejora y optimizar el trabajo en equipo.</p>
+      </div>
+      <div class="why-us-item">
+        <h3><strong>Control efectivo:</strong></h3>
+        <p>El seguimiento de variables clave y el uso de instrumentos adecuados garantizan el cumplimiento de los objetivos del proyecto.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Pie de página -->
   <footer>
-    <p>&copy; 2025 Farm Management App. Desarrollado por el equipo PAIA.</p>
+    &copy; 2025 PAIA Developments ®
   </footer>
 </body>
 </html>
