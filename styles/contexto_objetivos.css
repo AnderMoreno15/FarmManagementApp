@@ -65,6 +65,22 @@ body {
     background-blend-mode: overlay; /* Combina el color de fondo con la imagen */
 }
 
+.cover-seguimiento {
+    min-height: 804px;
+    background-image: url(https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: left; /* Alineación del texto dentro del cover */
+    color: white; /* Color del texto en el cover */
+    background-color: rgba(0, 0, 0, 0.5); /* Añade una capa oscura para mejorar la legibilidad del texto sobre la imagen */
+    background-blend-mode: overlay; /* Combina el color de fondo con la imagen */
+}
+
 .cover-inner {
     max-width: 1200px;
     width: 100%;
@@ -394,4 +410,40 @@ section {
         display: flex;
         flex-direction: column;
     }
+}
+
+/* Añade esto a contexto_objetivos.css o style.css */
+
+.seguimiento-lista {
+    max-width: 700px;
+    margin: 30px auto 0 auto;
+    text-align: left;
+    padding: 0;
+    list-style: none;
+}
+
+.seguimiento-lista li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    background: #fffbe6;
+    border-left: 5px solid #FFD700;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    padding: 14px 18px;
+    box-shadow: 0 2px 8px rgba(107, 142, 35, 0.07);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.seguimiento-lista li:hover {
+    box-shadow: 0 6px 18px rgba(107, 142, 35, 0.18);
+    transform: translateY(-2px) scale(1.02);
+    border-left: 5px solid #4CAF50;
+}
+
+.seguimiento-icono {
+    font-size: 1.7em;
+    margin-right: 16px;
+    flex-shrink: 0;
 }
