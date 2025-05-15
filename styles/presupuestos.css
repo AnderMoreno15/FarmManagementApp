@@ -1,0 +1,446 @@
+/* Estilos generales del cuerpo */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #F5F5DC; /* Beige, para un fondo natural */
+    color: #4CAF50; /* Verde para el texto */
+}
+
+/* Barra superior */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6B8E23; /* Verde oliva para un toque rústico */
+    color: white;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+.topbar h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #FFD700; /* Amarillo dorado para resaltar */
+}
+
+.topbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar ul li a {
+    color: #FFD700; /* Amarillo dorado */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0.5em 1.5em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 2px solid #FFD700; /* Borde amarillo */
+}
+
+.topbar ul li a:hover {
+    color: #4CAF50;
+    background-color: #FFD700; /* Fondo amarillo al pasar el ratón */
+}
+
+/* Encabezado principal (hero section) */
+.cover {
+    min-height: 804px;
+    background-image: url(https://farmmanagementapp.wordpress.com/wp-content/uploads/2025/02/annie-spratt-jmjnnq2xfoy-unsplash.jpg?w=1024);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: left; /* Alineación del texto dentro del cover */
+    color: white; /* Color del texto en el cover */
+    background-color: rgba(0, 0, 0, 0.5); /* Añade una capa oscura para mejorar la legibilidad del texto sobre la imagen */
+    background-blend-mode: overlay; /* Combina el color de fondo con la imagen */
+}
+
+.cover-seguimiento {
+    min-height: 804px;
+    background-image: url(https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: left; /* Alineación del texto dentro del cover */
+    color: white; /* Color del texto en el cover */
+    background-color: rgba(0, 0, 0, 0.5); /* Añade una capa oscura para mejorar la legibilidad del texto sobre la imagen */
+    background-blend-mode: overlay; /* Combina el color de fondo con la imagen */
+}
+
+.cover-inner {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.cover h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #FFD700; /* Amarillo dorado para el título del cover */
+}
+
+.cover p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cover .cta-button {
+    display: inline-block;
+    background-color: #FFD700; /* Amarillo dorado */
+    color: #6B8E23; /* Verde oliva */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cover .cta-button:hover {
+    background-color: #FFC107; /* Amarillo más oscuro */
+    transform: scale(1.05);
+}
+
+/* Sección de introducción */
+.intro {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F5F5DC; /* Beige */
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Verde */
+}
+
+.intro p {
+    font-size: 16px;
+    color: #333; /* Gris oscuro */
+}
+
+/* Sección de servicios */
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F5F5DC; /* Beige */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #4CAF50; /* Verde */
+}
+
+.services-grid {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 auto; /* ¡Añade esta línea! */
+}
+
+.service-item {
+    flex: 1 1 300px; /* Para que cada item ocupe un ancho mínimo de 300px y crezca/decrezca */
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border-radius: 8px; /* Bordes redondeados para las imágenes de servicio */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sutil sombra para las imágenes */
+}
+
+.service-item h3 {
+    font-size: 22px;
+    color: #6B8E23; /* Verde oliva */
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #333; /* Gris oscuro */
+}
+
+/* Sección de "por qué nosotros" */
+.why-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F5F5DC; /* Beige */
+}
+
+.why-us h2 {
+    font-size: 28px;
+    color: #4CAF50; /* Verde */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.why-us-grid {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 auto; /* ¡Añade esta línea! */
+}
+
+.why-us-item {
+    flex: 1 1 400px; /* Ancho flexible para los items de "por qué nosotros" */
+    padding: 20px;
+    border-top: 2px solid #6B8E23; /* Línea superior para destacar cada punto */
+}
+
+.why-us-item h3 {
+    font-size: 20px;
+    color: #6B8E23; /* Verde oliva */
+    margin-bottom: 10px;
+}
+
+.why-us-item p {
+    font-size: 16px;
+    color: #333; /* Gris oscuro */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6B8E23; /* Verde oliva */
+    color: white;
+    font-size: 14px;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #6B8E23; /* Verde oliva */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4CAF50; /* Verde más brillante */
+    text-decoration: underline;
+}
+
+/* Estilos para botones (si los hubiera fuera del cover) */
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #388E3C; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de crecimiento */
+}
+
+/* Estilos para secciones específicas (si las hubiera) */
+#metodologia, #tecnologias, #resultados {
+    padding: 40px 20px;
+    background-color: #F5F5DC; /* Beige */
+    text-align: center;
+}
+
+#metodologia h2, #tecnologias h2, #resultados h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Verde */
+}
+
+#metodologia ul, #tecnologias ul, #resultados ul {
+    list-style: none;
+    padding: 0;
+}
+
+#metodologia ul li, #tecnologias ul li, #resultados ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Gris oscuro */
+}
+
+/* Estilos para el equipo (si lo hubiera) */
+#equipo .feature {
+    margin-bottom: 20px;
+}
+
+#equipo .feature h3 {
+    font-size: 22px;
+    color: #6B8E23; /* Verde oliva */
+}
+
+#equipo .feature p {
+    font-size: 16px;
+    color: #333; /* Gris oscuro */
+}
+
+/* Estilos para el main (si hubiera una estructura de layout más compleja) */
+main {
+    margin-left: 0; /* Ajustado para ocupar todo el ancho en este diseño */
+    padding: 20px;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/* Estilos para la barra de navegación (si la hubiera) */
+.navbar {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: -10px;
+}
+
+.navbar-toggler-icon::after {
+    top: 10px;
+}
+
+/* Estilos para las tablas */
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(107, 142, 35, 0.2); /* Sombra verde oliva */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #6B8E23; /* Verde oliva */
+    color: white;
+}
+
+table thead th {
+    padding: 16px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #4CAF50;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody td {
+    padding: 14px 16px;
+    color: #333;
+}
+
+table tbody tr:hover {
+    background-color: #fffbe6;
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 28px;
+    color: #4CAF50;
+}
+
+.content-area {
+    padding: 40px 20px;
+    background-color: #F5F5DC; /* Fondo beige para consistencia */
+}
