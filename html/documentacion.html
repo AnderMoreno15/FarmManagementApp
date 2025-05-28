@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Documentación Técnica</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="icon" href="../resources/media/logo.png">
+    <meta charset="utf-8">
+    <title>Farm Management App | Presentación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/documentacion.css">
+    <link rel="icon" href="resources/media/logo.png">
 </head>
 
 <body>
-  <p>>Documentación Técnica</p>
+    <nav class="topbar">
+    <h2>Farm Management App</h2>
+    <ul>
+        <li><a href="../Index.html">Inicio</a></li>
+        <li><a href="contexto_objetivos.html">Contexto y Objetivos</a></li>
+        <li><a href="documentacion.html">Documentación</a></li>
+        <li><a href="planificacion.html">Planificación</a></li>
+        <li><a href="seguimiento.html">Ejecución y Seguimiento</a></li>
+    </ul>
+  </nav>
+
+    <header class="title">
+        <h1>Documentación técnica</h1>
+    </header>
+
+    <section id="definicion_sistema" class="features">
+        <h2>Definición del Sistema</h2>
+        <div class="feature ancho">
+            <p>La aplicación de escritorio tiene como objetivo la gestión integral de granjas mediante el registro, seguimiento y control de grupos de animales, sus animales, los productos que consumen y los registros de consumo asociados. Se trata de una herramienta orientada a optimizar el control de recursos, adaptada para el seguimiento de diferentes tipos de granjas ganaderas.
+            </p><p>Ha sido desarrollada en Java utilizando Hibernate para la persistencia de datos y opera sobre un servidor GlassFish  con soporte para envío de notificaciones vía correo electrónico mediante un servidor SMTP. La arquitectura está pensada para facilitar que los usuarios, los administradores de la granja, colaboren sobre los mismos datos de gestión.
+            </p>
+        </div>
+        <div class="feature ancho">
+            <h3>Descripción Funcional</h3>
+            <p>El sistema está estructurado en torno a cuatro entidades principales:</p>
+                <ul>
+                    <li><strong>Grupos de Animales:</strong> Representan conjuntos de animales organizados por criterios funcionales o espaciales (por ejemplo, especie, área de la granja). Cada grupo contiene una descripción, área asignada, fecha de creación, y puede estar gestionado por múltiples usuarios (managers).
+                    </li>
+                    <li><strong>Animales:</strong> Cada animal tiene atributos como nombre, subespecie, especie, fecha de nacimiento, y un consumo mensual estimado. Se encuentran vinculados de forma única a un grupo de animales. Los usuarios pueden registrar nuevos animales, modificarlos, eliminarlos y filtrarlos por criterios como especie, fecha de nacimiento grupo de animal al que pertenecen.
+                    </li>
+                    <li><strong>Productos:</strong> Elementos consumibles por los animales, tales como alimentos, suplementos o medicamentos. Cada producto tiene nombre, consumo mensual estimado, precio, stock disponible y proveedor asociado.
+                    </li>
+                    <li><strong>Consumos:</strong>  Registros que indican cuánto de cada producto ha sido consumido por un grupo de animales en una fecha determinada. Esta entidad relaciona productos y grupos de animales mediante una clave compuesta  y permite llevar el seguimiento.
+                    </li>
+                </ul>
+        </div>
+        <div class="doble">
+            <div class="feature">
+                <h3>Funcionalidades principales del sistema:</h3>
+                <p><strong>CRUD</strong> completo (crear, leer, actualizar, eliminar) para todas las entidades: animales, grupos, productos y consumos.
+                Generación de <strong>reportes</strong> imprimibles de cada entidad (por ejemplo, listado de animales de un grupo con todos sus datos).
+                Gestión <strong>multiusuario</strong> con posibilidad de que varios usuarios colaboren sobre los mismos grupos.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>Identificación de Usuarios</h3>
+                <p>El sistema está destinado a ser utilizado por los siguientes perfiles de usuario:
+                <strong>Administradores de Granja / Managers:</strong> Usuarios registrados que gestionan los datos de uno o varios grupos de animales. Tienen acceso completo al sistema (CRUD), pueden generar reportes, supervisar consumos y productos, y administrar la información de los animales. Cada grupo puede estar vinculado a múltiples managers, permitiendo una gestión colaborativa.
+                </p>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="arquitectura_sw"  class="features">
+        <h2>Arquitectura de software</h2>
+        <img src="../resources/media/arquitectura_sw.png" alt="Arquitectura de Software" class="software-architecture">
+    </section>
+    <section id="casos_uso"  class="features">
+        <h2>Especificación de casos de uso</h2>
+        <img src="../resources/media/casos_de_uso.png" alt="Diagrama de Casos de Uso" class="use-case-diagram">
+    </section>
+    <section id="modelo_datos"  class="features">
+        <h2>Modelo conceptual de datos</h2>
+        <img src="../resources/media/modelo_de_datos.png" alt="Modelo Conceptual de Datos" class="conceptual-model">
+    </section>
+
+    
+    <footer>
+        &copy; 2025 PAIA Developments ®
+    </footer>
 </body>
 </html>
