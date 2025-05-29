@@ -15,30 +15,43 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 .topbar h2 {
     margin: 0;
-    font-size: 28px;
+    font-size: 24;
     color: #FFD700;
 }
-
-.topbar ul {
+ .topbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.topbar ul li {
+    flex: 1 1 auto; 
 }
 
 .topbar ul li a {
+    display: block;
+    text-align: center;
+    white-space: nowrap;
     color: #FFD700;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
-    padding: 0.5em 1.5em;
+    font-size: clamp(12px, 1.5vw, 18px);
+    padding: 0.5em 0.5em;
     border-radius: 4px;
     transition: all 0.3s ease;
     background-color: transparent;
     border: 2px solid #FFD700;
+    flex-shrink: 1;
 }
 
 .topbar ul li a:hover {
