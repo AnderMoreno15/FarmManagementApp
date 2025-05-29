@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #6B8E23; /* Verde oliva para un toque rústico */
+    background-color: transparent; /* Verde oliva para un toque rústico */
     color: white;
     padding: 20px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
@@ -50,9 +50,13 @@ body {
 
 /* Encabezado principal (hero section) */
 .cover {
-    min-height: 804px;
+    margin-top: -83px;
+    min-height: 750px;
     background-image: url(https://farmmanagementapp.wordpress.com/wp-content/uploads/2025/02/annie-spratt-jmjnnq2xfoy-unsplash.jpg?w=1024);
     background-size: cover;
+    background-repeat: no-repeat; /* Opcional: para que no se repita */
+  background-position: center;  /* Opcional: para centrar la imagen */
+  background-attachment: fixed;
     background-position: bottom center;
     display: flex;
     justify-content: center;
@@ -61,7 +65,7 @@ body {
     box-sizing: border-box;
     text-align: left; /* Alineación del texto dentro del cover */
     color: white; /* Color del texto en el cover */
-    background-color: rgba(0, 0, 0, 0.5); /* Añade una capa oscura para mejorar la legibilidad del texto sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.7); /* Añade una capa oscura para mejorar la legibilidad del texto sobre la imagen */
     background-blend-mode: overlay; /* Combina el color de fondo con la imagen */
 }
 
